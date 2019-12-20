@@ -1,0 +1,153 @@
+/* Abattoir Label and Distro: Styling */
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swa');
+
+/* Universal Styling */
+* {
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    color: #666;
+}
+
+/* Fade in for page content https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load */
+.content-section {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* Invisible scrollbar https://stackoverflow.com/questions/38780478/how-to-ignore-a-scrollbar-width-in-css */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Sticky Header Banner */
+.main-header {
+    background-image: url(/images/banner.png);
+    background-repeat: no-repeat;
+    height: 150px;
+    background-position: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding-bottom: 30px;
+    z-index: 999;
+}
+
+/* Header Nav List Items */
+.nav li {
+    display: inline;
+    align-self: center;
+    padding-right: 40px;
+}
+
+/* Header Nav Links  */
+.nav a {
+    display: inline-block;
+    padding: .0em;
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header Nav Links Hover Effect */
+.nav a:hover {
+    background-color: #dbd9d9;
+}
+
+/* Header Main Nav Class */
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 80px;
+}
+
+/* Padding for all Body content to accomodate sticky header */
+body {
+    padding-top: 140px;
+}
+
+/* Content-Section Class */
+.content-section {
+    margin: 1em;
+}
+
+/* Content-Section Container Class */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+/* h1 Class */
+.section-header {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    color: #555555;
+    font-size: 1.2em;
+}
+
+/* Global Button Class */
+.btn {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-left: .35em;
+    padding-right: .35em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.store-items {
+    display: inline-flex;
+}
+
+.store-item {
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.store-item-title {
+    font-size: .6em;
+    text-align: center;
+}
+
+.store-header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.audio-player {
+    padding-top: 10px;
+}
